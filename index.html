@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Girls Who Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body, html {
             margin: 0;
             padding: 0;
-            font-family: 'Holtwood One SC', sans-serif;
-            font-weight: bold;
+            font-family: 'Barlow Condensed', sans-serif;
             scroll-behavior: smooth;
         }
         header {
@@ -20,9 +20,8 @@
             text-align: center;
             padding: 1em;
             color: white;
-            font-size: 1.5em;
+            font-size: 2em;
             font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
         .top-section {
             display: flex;
@@ -30,8 +29,22 @@
             align-items: center;
             flex-direction: column;
             height: 100vh;
-            background-color: lavender;
+            background-image: url('https://t3.ftcdn.net/jpg/10/30/29/72/360_F_1030297266_tEZ6hwXAFo9h2ONpoiiYTP0r1WrO8Ejy.jpg');
+            background-size: cover;
+            background-position: center;
             text-align: center;
+            color: white;
+            position: relative;
+        }
+        .top-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
         }
         .top-section h1 {
             font-size: 3em;
@@ -50,7 +63,7 @@
             padding: 0;
         }
         .middle-section ul li {
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin: 10px 0;
         }
         .bottom-section {
